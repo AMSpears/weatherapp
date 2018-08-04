@@ -9,7 +9,7 @@ class HomePage extends Component {
     
     componentDidMount() {
         const cities = ["Boston", "New York"]
-        fetch(`http://api.openweathermap.org/data/2.5/forecast?id=52490&appid=${API_KEY}&q=${cities}`)
+        fetch(`http://api.openweathermap.org/data/2.5/forecast?id=52490&units=imperial&appid=${API_KEY}&q=${cities}&cnt=60`)
             .then(res => res.json())
             .then(results => {
                 this.setState({
