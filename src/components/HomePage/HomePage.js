@@ -1,6 +1,7 @@
 import React, {Component} from "react"
 
 import "./HomePage.css"
+import Header from "../Header/Header"
 
 const API_KEY = "d0c74e4757653dd7d26fe20813b354d8"
 const dateFormat = require('dateformat');
@@ -33,6 +34,8 @@ class HomePage extends Component {
       return null;
     }
     return (
+      <div>
+      <Header/>
       <div className= "weather_container" >
         {weatherResults.map(weatherResult => (
           <div className= "weather_summary" key={weatherResult.city.id}>
@@ -50,6 +53,7 @@ class HomePage extends Component {
                 </div>
             </div>
             ))}
+        </div>
         </div>
     );
   }

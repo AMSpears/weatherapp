@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import { Link } from "react-router-dom"
+import Header from "../Header/Header"
 
 
 const API_KEY = "d0c74e4757653dd7d26fe20813b354d8"
@@ -28,7 +28,7 @@ class CityTwo extends Component {
         } = this.state;
         return ( 
             <div> 
-            <Link to= "/"> Return Home </Link>
+            <Header/>
             {
               this.state.weatherResults.length !== 0 &&
                 <div className = "container" key = { weatherResults.city.id } >
