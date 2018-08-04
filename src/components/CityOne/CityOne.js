@@ -2,7 +2,6 @@ import React, { Component } from "react"
 import { Link } from "react-router-dom"
 import "./CityOne.css"
 
-
 const API_KEY = "d0c74e4757653dd7d26fe20813b354d8"
 
 class CityOne extends Component {
@@ -30,10 +29,9 @@ class CityOne extends Component {
         return ( 
             <div> 
             <Link to= "/"> Return Home </Link>
-            {
-              this.state.weatherResults.length !== 0 &&
-                <div className = "container" key = { weatherResults.city.id } >
-                    <h2> { weatherResults.city.name }</h2> 
+            { this.state.weatherResults.length !== 0 &&
+            <div className = "container" key = { weatherResults.city.id } >
+                <h2> { weatherResults.city.name }</h2> 
                     <h3>Today</h3>
                         <table>
                             <tr>
@@ -94,20 +92,20 @@ class CityOne extends Component {
                             </tr>
                         </table>
                         
-                        <h3>Week overview</h3>
-                            <div className ="week_container">
-                                <div className= "days_container">
-                                  <h4> Date/Time <br/> {weatherResults.list[6].dt_txt} </h4>
-                                   <tr>
+                    <h3>Week overview</h3>
+                        <div className ="week_container">
+                            <div className= "days_container">
+                                <h4> Date/Time <br/> {weatherResults.list[6].dt_txt} </h4>
+                                    <tr>
                                         <p>{weatherResults.list[6].weather[0].description}</p>
                                         <p>{weatherResults.list[6].main.temp} </p>
                                         <p>{weatherResults.list[6].main.pressure}</p>
                                         <p>{weatherResults.list[6].main.humidity}</p>
                                         <p> {weatherResults.list[6].wind.speed}</p>
                                   </tr>
-                                 </div>
-                                <div className= "days_container">
-                                  <h4> Date/Time <br/> {weatherResults.list[14].dt_txt} </h4>
+                            </div>
+                            <div className= "days_container">
+                                <h4> Date/Time <br/> {weatherResults.list[14].dt_txt} </h4>
                                     <tr>
                                         <p>{weatherResults.list[14].weather[0].description}</p>
                                         <p>{weatherResults.list[14].main.temp} </p>
@@ -115,9 +113,9 @@ class CityOne extends Component {
                                         <p>{weatherResults.list[14].main.humidity}</p>
                                         <p> {weatherResults.list[14].wind.speed}</p>
                                     </tr>
-                                </div>
-                                <div className= "days_container">
-                                   <h4> Date/Time <br/> {weatherResults.list[22].dt_txt} </h4>
+                            </div>
+                            <div className= "days_container">
+                                <h4> Date/Time <br/> {weatherResults.list[22].dt_txt} </h4>
                                     <tr>
                                         <p>{weatherResults.list[22].weather[0].description}</p>
                                         <p>{weatherResults.list[22].main.temp} </p>
@@ -125,18 +123,18 @@ class CityOne extends Component {
                                         <p>{weatherResults.list[22].main.humidity}</p>
                                         <p> {weatherResults.list[22].wind.speed}</p>
                                     </tr>
-                                </div>
-                                <div className= "days_container">
-                                    <h4> Date/Time <br/> {weatherResults.list[30].dt_txt} </h4>
-                                     <tr>
+                            </div>
+                            <div className= "days_container">
+                                <h4> Date/Time <br/> {weatherResults.list[30].dt_txt} </h4>
+                                    <tr>
                                         <p>{weatherResults.list[30].weather[0].description}</p>
                                         <p>{weatherResults.list[30].main.temp} </p>
                                         <p>{weatherResults.list[30].main.pressure}</p>
                                         <p>{weatherResults.list[30].main.humidity}</p>
                                         <p> {weatherResults.list[30].wind.speed}</p>
                                     </tr>
-                                </div> 
-                     </div>
+                            </div> 
+                       </div>
                 </div> 
               }
          </div>

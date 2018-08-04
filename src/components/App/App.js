@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import Header from "../Header/Header"
 import HomePage from "../HomePage/HomePage"
-import CityOne from "../CityOne/CityOne"
+
 
 class App extends Component {
 
@@ -16,7 +16,7 @@ class App extends Component {
             <h1>Weather App</h1>
           </nav>
           <main>
-           <HomePage/>
+          <HomePage/>
           </main>
       </div>
    
