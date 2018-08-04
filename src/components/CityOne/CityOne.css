@@ -1,0 +1,13 @@
+table,
+th,
+td {
+    border: 1px solid grey;
+}
+.week_container {
+    display: flex;      
+}
+.days_container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}

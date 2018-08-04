@@ -9,11 +9,11 @@ const Header= () => {
         <div className= "tabs">
 
         <Link to= "/">Home</Link>
-        <Link to= "/cityone">CityOne</Link>
-        <Link to= "/citytwo">CityTwo</Link>
-        <Link to= "/citythree">CityThree</Link>
-        <Link to= "/cityfour">CityFour</Link>
-        <Link to= "/cityfive">CityFive</Link>
+        <Link to= "/cityone">New York</Link>
+        <Link to= "/citytwo">Washington </Link>
+        <Link to= "/citythree">Los Angeles</Link>
+        <Link to= "/cityfour">Boston</Link>
+        <Link to= "/cityfive">Houston</Link>
         </div>
         </div>
     )
