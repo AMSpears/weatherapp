@@ -46,7 +46,7 @@ class CityFive extends Component {
                             <tr>
                                 <td>{weatherResults.list[0].dt_txt}</td>
                                 <td>{weatherResults.list[0].weather[0].description}</td>
-                                <td>{weatherResults.list[0].main.temp} </td>
+                                <td>{Math.round(weatherResults.list[0].main.temp)} </td>
                                 <td>{weatherResults.list[0].main.pressure}</td>
                                 <td>{weatherResults.list[0].main.humidity}</td>
                                 <td> {weatherResults.list[0].wind.speed}</td>
@@ -54,7 +54,7 @@ class CityFive extends Component {
                             <tr>
                                 <td>{weatherResults.list[1].dt_txt}</td>
                                 <td>{weatherResults.list[1].weather[0].description}</td>
-                                <td>{weatherResults.list[1].main.temp} </td>
+                                <td>{Math.round(weatherResults.list[1].main.temp)} </td>
                                 <td>{weatherResults.list[1].main.pressure}</td>
                                 <td>{weatherResults.list[1].main.humidity}</td>
                                 <td> {weatherResults.list[1].wind.speed}</td>
@@ -62,7 +62,7 @@ class CityFive extends Component {
                             <tr>
                                 <td>{weatherResults.list[2].dt_txt}</td>
                                 <td>{weatherResults.list[2].weather[0].description}</td>
-                                <td>{weatherResults.list[2].main.temp} </td>
+                                <td>{Math.round(weatherResults.list[2].main.temp)} </td>
                                 <td>{weatherResults.list[2].main.pressure}</td>
                                 <td>{weatherResults.list[2].main.humidity}</td>
                                 <td> {weatherResults.list[2].wind.speed}</td>
@@ -70,7 +70,7 @@ class CityFive extends Component {
                             <tr>
                                 <td>{weatherResults.list[3].dt_txt}</td>
                                 <td>{weatherResults.list[3].weather[0].description}</td>
-                                <td>{weatherResults.list[3].main.temp} </td>
+                                <td>{Math.round(weatherResults.list[3].main.temp)} </td>
                                 <td>{weatherResults.list[3].main.pressure}</td>
                                 <td>{weatherResults.list[3].main.humidity}</td>
                                 <td> {weatherResults.list[3].wind.speed}</td>
@@ -78,7 +78,7 @@ class CityFive extends Component {
                             <tr>
                                 <td>{weatherResults.list[4].dt_txt}</td>
                                 <td>{weatherResults.list[4].weather[0].description}</td>
-                                <td>{weatherResults.list[4].main.temp} </td>
+                                <td>{Math.round(weatherResults.list[4].main.temp)} </td>
                                 <td>{weatherResults.list[4].main.pressure}</td>
                                 <td>{weatherResults.list[4].main.humidity}</td>
                                 <td> {weatherResults.list[4].wind.speed}</td>
@@ -86,7 +86,7 @@ class CityFive extends Component {
                              <tr>
                                 <td>{weatherResults.list[5].dt_txt}</td>
                                 <td>{weatherResults.list[5].weather[0].description}</td>
-                                <td>{weatherResults.list[5].main.temp} </td>
+                                <td>{Math.round(weatherResults.list[5].main.temp)} </td>
                                 <td>{weatherResults.list[5].main.pressure}</td>
                                 <td>{weatherResults.list[5].main.humidity}</td>
                                 <td> {weatherResults.list[5].wind.speed}</td>
@@ -99,7 +99,7 @@ class CityFive extends Component {
                                   <h4> Date/Time <br/> {weatherResults.list[6].dt_txt} </h4>
                                    <tr>
                                         <p>{weatherResults.list[6].weather[0].description}</p>
-                                        <p>{weatherResults.list[6].main.temp} </p>
+                                        <p>{Math.round(weatherResults.list[6].main.temp)} </p>
                                         <p>{weatherResults.list[6].main.pressure}</p>
                                         <p>{weatherResults.list[6].main.humidity}</p>
                                         <p> {weatherResults.list[6].wind.speed}</p>
@@ -109,7 +109,7 @@ class CityFive extends Component {
                                   <h4> Date/Time <br/> {weatherResults.list[14].dt_txt} </h4>
                                     <tr>
                                         <p>{weatherResults.list[14].weather[0].description}</p>
-                                        <p>{weatherResults.list[14].main.temp} </p>
+                                        <p>{Math.round(weatherResults.list[14].main.temp)} </p>
                                         <p>{weatherResults.list[14].main.pressure}</p>
                                         <p>{weatherResults.list[14].main.humidity}</p>
                                         <p> {weatherResults.list[14].wind.speed}</p>
@@ -119,7 +119,7 @@ class CityFive extends Component {
                                    <h4> Date/Time <br/> {weatherResults.list[22].dt_txt} </h4>
                                     <tr>
                                         <p>{weatherResults.list[22].weather[0].description}</p>
-                                        <p>{weatherResults.list[22].main.temp} </p>
+                                        <p>{Math.round(weatherResults.list[22].main.temp)} </p>
                                         <p>{weatherResults.list[22].main.pressure}</p>
                                         <p>{weatherResults.list[22].main.humidity}</p>
                                         <p> {weatherResults.list[22].wind.speed}</p>
@@ -129,7 +129,7 @@ class CityFive extends Component {
                                     <h4> Date/Time <br/> {weatherResults.list[30].dt_txt} </h4>
                                      <tr>
                                         <p>{weatherResults.list[30].weather[0].description}</p>
-                                        <p>{weatherResults.list[30].main.temp} </p>
+                                        <p>{Math.round(weatherResults.list[30].main.temp)} </p>
                                         <p>{weatherResults.list[30].main.pressure}</p>
                                         <p>{weatherResults.list[30].main.humidity}</p>
                                         <p> {weatherResults.list[30].wind.speed}</p>

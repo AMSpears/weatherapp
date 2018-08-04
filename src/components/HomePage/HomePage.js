@@ -1,6 +1,10 @@
 import React, {Component} from "react"
 
+import "./HomePage.css"
+
 const API_KEY = "d0c74e4757653dd7d26fe20813b354d8"
+const dateFormat = require('dateformat');
+const now = new Date();
 
 class HomePage extends Component {
   state = {
@@ -24,23 +28,29 @@ class HomePage extends Component {
 
   render() {
     const { weatherResults } = this.state;
-
+    
     if (weatherResults.length === 0) {
       return null;
     }
-
     return (
-      <div className="container">
+      <div className= "weather_container" >
         {weatherResults.map(weatherResult => (
-          <div key={weatherResult.city.id}>
-            <h2>{weatherResult.city.name}</h2>
-            <p>{weatherResult.list[0].main.temp}</p>
-            <p>{weatherResult.list[0].weather[0].description}</p>
-            <p>Humidity: {weatherResult.list[0].main.humidity}</p>
-            <p>Wind: {weatherResult.list[0].wind.speed}</p>
-          </div>
-        ))}
-      </div>
+          <div className= "weather_summary" key={weatherResult.city.id}>
+                <div className= "weather_initial_content">
+                    <h2 id= "main_title">{weatherResult.city.name}</h2>
+                    <p id= "date">{dateFormat(now, "dddd, mmmm dS / h:MM TT")}</p>
+                </div>
+                <div className= "weather_main_content">
+                    <p id= "temp">{Math.round(weatherResult.list[0].main.temp)}&#176;</p>
+                </div>
+                <div className= "weather_details">
+                    <p id= "description">{weatherResult.list[0].weather[0].description}</p>
+                    <p><strong>Humidity:</strong> {weatherResult.list[0].main.humidity}%</p>
+                    <p><strong>Wind:</strong> SW {Math.round(weatherResult.list[0].wind.speed)} mph</p>
+                </div>
+            </div>
+            ))}
+        </div>
     );
   }
 }
