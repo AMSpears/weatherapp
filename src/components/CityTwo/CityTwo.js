@@ -29,7 +29,7 @@ class CityTwo extends Component {
         const {
             weatherResults
         } = this.state;
-       return ( 
+              return ( 
         <div>
             <nav>
                 <Header/>
@@ -107,8 +107,8 @@ class CityTwo extends Component {
                                 </tr>
                                 <tr>
                                     <td>{dateFormat(weatherResults.list[5].dt_txt,"h TT")}</td>
-                                    <td>{weatherResults.list[5].weather[0].description}
-                                        <img src = {`http://openweathermap.org/img/w/${weatherResults.list[5].weather[0].icon}.png`}/>
+                                    <td>{weatherResults.list[5].weather[0].description }
+                                     <img src = {`http://openweathermap.org/img/w/${weatherResults.list[5].weather[0].icon}.png`}/>
                                     </td>
                                     <td>{Math.round(weatherResults.list[5].main.temp)}&#176;</td>
                                     <td>{Math.round(weatherResults.list[5].main.temp_min)}&#176;/             
@@ -123,11 +123,9 @@ class CityTwo extends Component {
                     <h3>Week Overview</h3>
                     <div className ="week_container">
                         <div className= "days_container">
-                            <h4 id = "weekday_header">Tomorrow,<br/>
-                                {dateFormat(weatherResults.list[6].dt_txt,"dddd, mmmm dS")} 
-                            </h4>
+                            <h4 id = "weekday_header">Tomorrow</h4>
+                            <p id = "temp" >{Math.round(weatherResults.list[6].main.temp)}&#176;</p>
                             <div className= "weather_details">
-                                <p id = "temp" >{Math.round(weatherResults.list[6].main.temp)}&#176;</p>
                                 <p id = "description">{weatherResults.list[6].weather[0].description}</p>
                                 <img src = {`http://openweathermap.org/img/w/${weatherResults.list[6].weather[0].icon}.png`}/>
                                 <p>Min: {Math.round(weatherResults.list[6].main.temp_min)}&#176;</p> 
@@ -138,8 +136,7 @@ class CityTwo extends Component {
                             </div>
                             <div className= "days_container">
                                 <h4 id= "weekday_header">
-                                    {dateFormat(weatherResults.list[14].dt_txt,"dddd")},<br/>
-                                    {dateFormat(weatherResults.list[14].dt_txt,"mmmm dS")}
+                                    {dateFormat(weatherResults.list[14].dt_txt,"dddd")}
                                  </h4>
                                  <p id= "temp">{Math.round(weatherResults.list[14].main.temp)}&#176;</p>
                                 <div className= "weather_details">
@@ -153,8 +150,7 @@ class CityTwo extends Component {
                             </div>
                             <div className= "days_container">
                                     <h4 id= "weekday_header">
-                                    {dateFormat(weatherResults.list[22].dt_txt,"dddd")},<br/>
-                                    {dateFormat(weatherResults.list[22].dt_txt,"mmmm dS")}
+                                    {dateFormat(weatherResults.list[22].dt_txt,"dddd")}
                                     </h4>
                                     <p id = "temp">{Math.round(weatherResults.list[22].main.temp)}&#176;</p>
                                 <div className= "weather_details">
@@ -168,8 +164,7 @@ class CityTwo extends Component {
                             </div>
                             <div className= "days_container">
                                     <h4 id= "weekday_header">
-                                    {dateFormat(weatherResults.list[30].dt_txt,"dddd")},<br/>
-                                    {dateFormat(weatherResults.list[30].dt_txt,"mmmm dS")}
+                                    {dateFormat(weatherResults.list[30].dt_txt,"dddd")}
                                     </h4>                                    
                                     <p id= "temp" >{Math.round(weatherResults.list[30].main.temp)}&#176;</p>
                                  <div className= "weather_details">
