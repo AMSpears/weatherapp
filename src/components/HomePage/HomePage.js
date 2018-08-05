@@ -41,15 +41,15 @@ class HomePage extends Component {
           <div className= "weather_summary" key={weatherResult.city.id}>
                 <div className= "weather_initial_content">
                     <h2 id= "main_title">{weatherResult.city.name}</h2>
-                    <p id= "date">{dateFormat(now, "dddd, mmmm dS / h:MM TT")}</p>
+                    <h3>Today</h3>
                 </div>
                 <div className= "weather_main_content">
                     <p id= "temp">{Math.round(weatherResult.list[0].main.temp)}&#176;</p>
                 </div>
                 <div className= "weather_details">
                     <p id= "description">{weatherResult.list[0].weather[0].description}</p>
-                    <p><strong>Humidity:</strong> {weatherResult.list[0].main.humidity}%</p>
-                    <p><strong>Wind:</strong> SW {Math.round(weatherResult.list[0].wind.speed)} mph</p>
+                    <p> Humidity:  {weatherResult.list[0].main.humidity}%</p>
+                    <p>Wind: SW {Math.round(weatherResult.list[0].wind.speed)} mph</p>
                 </div>
             </div>
             ))}
