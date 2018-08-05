@@ -1,7 +1,5 @@
 # My Weather App
 
-![picture](./src/components/Img/weather_logo.png)
-
 ## Description
 
 The purpose of this application is to allow the user to check the weather for the specified cities.
