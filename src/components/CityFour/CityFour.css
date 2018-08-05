@@ -1,0 +1,6 @@
+.container_cityfour {
+    background-image: url('../Img/boston_background.jpg');
+    background-repeat: no-repeat;
+    height: 100%;
+    background-size: cover;
+}

@@ -13,7 +13,7 @@ class HomePage extends Component {
   };
 
   componentDidMount() {
-    const cities = ["New York", "Washington", "Los Angeles", "Boston", "Houston"];
+    const cities = ["New York", "Washington", "Los Angeles", "Boston", "Miami"];
 
     const promises = cities.map(city => {
       return fetch(`http://api.openweathermap.org/data/2.5/forecast?id=52490&units=imperial&appid=${API_KEY}&q=${city}&cnt=60`)
@@ -48,6 +48,7 @@ class HomePage extends Component {
                 </div>
                 <div className= "weather_details">
                     <p id= "description">{weatherResult.list[0].weather[0].description}</p>
+                    <img src = {`http://openweathermap.org/img/w/${weatherResult.list[0].weather[0].icon}.png`}/>
                     <p> Humidity:  {weatherResult.list[0].main.humidity}%</p>
                     <p>Wind: SW {Math.round(weatherResult.list[0].wind.speed)} mph</p>
                 </div>

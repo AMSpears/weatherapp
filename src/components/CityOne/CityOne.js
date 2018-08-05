@@ -35,12 +35,13 @@ class CityOne extends Component {
                 <Header/>
             </nav>
             { this.state.weatherResults.length !== 0 &&
-            <div className = "container" key = { weatherResults.city.id } >
+            <div className = "container_cityone" key = { weatherResults.city.id } >
                 <h1>{ weatherResults.city.name } /  {Math.round(weatherResults.list[0].main.temp)}&#176;</h1> 
                     <div className= "cities_weather_container">
                         <div className= "cities_weather_summary">
                              <h3>Today / {dateFormat(now, "h:ss TT")}</h3>
                                 <p id= "description">{weatherResults.list[0].weather[0].description}</p>
+                                <img src = {`http://openweathermap.org/img/w/${weatherResults.list[0].weather[0].icon}.png`}/>
                                 <p id= "temp"> {Math.round(weatherResults.list[0].main.temp)}&#176;</p>
                                 <div className = "weather_details">
                                 <p>Min: {Math.round(weatherResults.list[0].main.temp_min)}&#176;</p>
@@ -62,7 +63,9 @@ class CityOne extends Component {
                                 </tr>
                                 <tr>
                                     <td> {dateFormat(weatherResults.list[1].dt_txt, "h TT")} </td>
-                                    <td>{weatherResults.list[1].weather[0].description}</td>
+                                    <td>{weatherResults.list[1].weather[0].description}
+                                        <img src = {`http://openweathermap.org/img/w/${weatherResults.list[1].weather[0].icon}.png`}/>
+                                    </td>
                                     <td>{Math.round(weatherResults.list[1].main.temp)}&#176;</td>
                                     <td>{Math.round(weatherResults.list[1].main.temp_min)}&#176; / 
                                         {Math.round(weatherResults.list[1].main.temp_max)}&#176;</td>
@@ -71,7 +74,9 @@ class CityOne extends Component {
                                 </tr>
                                 <tr>
                                     <td>{dateFormat(weatherResults.list[2].dt_txt, "h TT")}</td>
-                                    <td>{weatherResults.list[2].weather[0].description}</td>
+                                    <td>{weatherResults.list[2].weather[0].description}
+                                        <img src = {`http://openweathermap.org/img/w/${weatherResults.list[2].weather[0].icon}.png`}/>
+                                    </td>
                                     <td>{Math.round(weatherResults.list[2].main.temp)}&#176;</td>
                                     <td>{Math.round(weatherResults.list[2].main.temp_min)}&#176; / 
                                         {Math.round(weatherResults.list[2].main.temp_max)}&#176;</td>
@@ -80,7 +85,9 @@ class CityOne extends Component {
                                 </tr>
                                 <tr>
                                     <td>{dateFormat(weatherResults.list[3].dt_txt,"h TT")}</td>
-                                    <td>{weatherResults.list[3].weather[0].description}</td>
+                                   <td>{weatherResults.list[3].weather[0].description}
+                                        <img src = {`http://openweathermap.org/img/w/${weatherResults.list[3].weather[0].icon}.png`}/>
+                                    </td>
                                     <td>{Math.round(weatherResults.list[3].main.temp)}&#176;</td>
                                     <td>{Math.round(weatherResults.list[3].main.temp_min)}&#176; / 
                                         {Math.round(weatherResults.list[3].main.temp_max)}&#176;</td> 
@@ -89,7 +96,9 @@ class CityOne extends Component {
                                 </tr>
                                 <tr>
                                     <td>{dateFormat(weatherResults.list[4].dt_txt,"h TT")}</td>
-                                    <td>{weatherResults.list[4].weather[0].description}</td>
+                                    <td>{weatherResults.list[4].weather[0].description}
+                                        <img src = {`http://openweathermap.org/img/w/${weatherResults.list[4].weather[0].icon}.png`}/>
+                                    </td>
                                     <td>{Math.round(weatherResults.list[4].main.temp)}&#176;</td>
                                     <td>{Math.round(weatherResults.list[4].main.temp_min)}&#176; / 
                                         {Math.round(weatherResults.list[4].main.temp_max)}&#176;</td>
@@ -98,7 +107,9 @@ class CityOne extends Component {
                                 </tr>
                                 <tr>
                                     <td>{dateFormat(weatherResults.list[5].dt_txt,"h TT")}</td>
-                                    <td>{weatherResults.list[5].weather[0].description}</td>
+                                    <td>{weatherResults.list[5].weather[0].description}
+                                        <img src = {`http://openweathermap.org/img/w/${weatherResults.list[5].weather[0].icon}.png`}/>
+                                    </td>
                                     <td>{Math.round(weatherResults.list[5].main.temp)}&#176;</td>
                                     <td>{Math.round(weatherResults.list[5].main.temp_min)}&#176;/             
                                         {Math.round(weatherResults.list[5].main.temp_max)}&#176;</td>
@@ -118,6 +129,7 @@ class CityOne extends Component {
                             <div className= "weather_details">
                                 <p id = "temp" >{Math.round(weatherResults.list[6].main.temp)}&#176;</p>
                                 <p id = "description">{weatherResults.list[6].weather[0].description}</p>
+                                <img src = {`http://openweathermap.org/img/w/${weatherResults.list[6].weather[0].icon}.png`}/>
                                 <p>Min: {Math.round(weatherResults.list[6].main.temp_min)}&#176;</p> 
                                 <p>Max: {Math.round(weatherResults.list[6].main.temp_max)}&#176;</p>
                                 <p>Humidity: {weatherResults.list[6].main.humidity}%</p>
@@ -132,6 +144,7 @@ class CityOne extends Component {
                                  <p id= "temp">{Math.round(weatherResults.list[14].main.temp)}&#176;</p>
                                 <div className= "weather_details">
                                     <p id= "description"> {weatherResults.list[14].weather[0].description}</p>
+                                    <img src = {`http://openweathermap.org/img/w/${weatherResults.list[14].weather[0].icon}.png`}/>
                                     <p>Min: {Math.round(weatherResults.list[14].main.temp_min)}&#176; </p>
                                     <p>Max: {Math.round(weatherResults.list[14].main.temp_max)}&#176;</p>
                                     <p>Humidity: {weatherResults.list[14].main.humidity}%</p>
@@ -146,6 +159,7 @@ class CityOne extends Component {
                                     <p id = "temp">{Math.round(weatherResults.list[22].main.temp)}&#176;</p>
                                 <div className= "weather_details">
                                     <p id= "description">{weatherResults.list[22].weather[0].description}</p>
+                                    <img src = {`http://openweathermap.org/img/w/${weatherResults.list[22].weather[0].icon}.png`}/>
                                     <p>Min: {Math.round(weatherResults.list[22].main.temp_min)}&#176;</p> 
                                     <p>Max: {Math.round(weatherResults.list[22].main.temp_max)}&#176;</p>
                                     <p>Humidity: {weatherResults.list[22].main.humidity}%</p>
@@ -160,6 +174,7 @@ class CityOne extends Component {
                                     <p id= "temp" >{Math.round(weatherResults.list[30].main.temp)}&#176;</p>
                                  <div className= "weather_details">
                                     <p id= "description">{weatherResults.list[30].weather[0].description}</p>
+                                    <img src = {`http://openweathermap.org/img/w/${weatherResults.list[30].weather[0].icon}.png`}/>
                                     <p>Min: {Math.round(weatherResults.list[30].main.temp_min)}&#176;</p> 
                                     <p>Max: {Math.round(weatherResults.list[30].main.temp_max)}&#176;</p>
                                     <p>Humidity: {weatherResults.list[30].main.humidity}%</p>

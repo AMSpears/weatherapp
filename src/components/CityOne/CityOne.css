@@ -1,3 +1,10 @@
+.container_cityone {
+    background-image: url('../Img/newyork_background.jpg');
+    background-repeat: no-repeat;
+    height: 100%;
+    background-size: cover;
+}
+
 h1 {
     font-size: 60px;
     font-family: 'Roboto Slab', serif;
@@ -44,6 +51,7 @@ td {
     width: inherit;
     border-radius: 10px;
     font-size: 20px;
+    background-color:white;
 }
 .week_container {
   display: flex;
@@ -59,4 +67,6 @@ td {
    padding: 50px;
    width: 200px;
    border-radius: 10px;
+   background-color:white;
+
 }
