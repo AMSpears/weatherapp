@@ -16,3 +16,8 @@ a {
 a:hover {
     border-bottom:2px solid #5786d6;
 }
+#logo {
+    font-size: 30px;
+    padding-right:70px;
+    color: #5786d6;
+    }
