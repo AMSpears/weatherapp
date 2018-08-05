@@ -28,7 +28,7 @@ class CityFour extends Component {
         const {
             weatherResults
         } = this.state;
-        return ( 
+         return ( 
         <div>
             <nav>
                 <Header/>
@@ -36,8 +36,8 @@ class CityFour extends Component {
             { this.state.weatherResults.length !== 0 &&
             <div className = "container_cityfour" key = { weatherResults.city.id } >
                 <h1>{ weatherResults.city.name } /  {Math.round(weatherResults.list[0].main.temp)}&#176;</h1> 
-                    <div className= "cities_weather_container">
-                        <div className= "cities_weather_summary">
+                    <div className= "weather_city_container">
+                        <div className= "weather_city_summary" id="main_city_detail">
                              <h3 id = "date_title">Today / {dateFormat(now, "h:ss TT")}</h3>
                                 <p id= "description">{weatherResults.list[0].weather[0].description}</p>
                                 <img src = {`http://openweathermap.org/img/w/${weatherResults.list[0].weather[0].icon}.png`}/>
@@ -49,9 +49,8 @@ class CityFour extends Component {
                                 <p> SW {Math.round(weatherResults.list[0].wind.speed)} mph</p>
                             </div>
                         </div>
-                         <div className = "cities_weather_summary">
-                            <table>
-                                <h3>Hourly</h3>
+                        <div className= "weather_city_summary" id= "hourly_container">
+                             <h3>Hourly</h3>
                                 <tr>
                                     <th>Time</th>
                                     <th>Description</th>
@@ -105,7 +104,7 @@ class CityFour extends Component {
                                     <td> SW {Math.round(weatherResults.list[4].wind.speed)} mph</td>
                                 </tr>
                                 <tr>
-                                    <td>{dateFormat(weatherResults.list[5].dt_txt,"h TT")}</td>
+                                    <td >{dateFormat(weatherResults.list[5].dt_txt,"h TT")}</td>
                                     <td>{weatherResults.list[5].weather[0].description }
                                      <img src = {`http://openweathermap.org/img/w/${weatherResults.list[5].weather[0].icon}.png`}/>
                                     </td>
@@ -114,14 +113,13 @@ class CityFour extends Component {
                                         {Math.round(weatherResults.list[5].main.temp_max)}&#176;</td>
                                     <td>{weatherResults.list[5].main.humidity}%</td>
                                     <td> SW {Math.round(weatherResults.list[5].wind.speed)} mph</td>
-                                </tr>
-                            </table>
-                         </div>
+                               </tr>
+                        </div>
                     </div>     
 
                     <h3>Week Overview</h3>
-                    <div className ="week_container">
-                        <div className= "days_container">
+                    <div className ="weather_city_container">
+                        <div className= "weather_city_summary" id= "weekday_contain">
                             <h4 id = "weekday_header">Tomorrow</h4>
                             <p id = "temp" >{Math.round(weatherResults.list[6].main.temp)}&#176;</p>
                             <div className= "weather_details">
@@ -133,7 +131,7 @@ class CityFour extends Component {
                                 <p> SW {Math.round(weatherResults.list[6].wind.speed)} mph</p>
                             </div>
                             </div>
-                            <div className= "days_container">
+                            <div className= "weather_city_summary" id= "weekday_container">
                                 <h4 id= "weekday_header">
                                     {dateFormat(weatherResults.list[14].dt_txt,"dddd")}
                                  </h4>
@@ -147,7 +145,7 @@ class CityFour extends Component {
                                     <p> SW {Math.round(weatherResults.list[14].wind.speed)} mph</p>
                                 </div>
                             </div>
-                            <div className= "days_container">
+                            <div className= "weather_city_summary" id= "weekday_container"> 
                                     <h4 id= "weekday_header">
                                     {dateFormat(weatherResults.list[22].dt_txt,"dddd")}
                                     </h4>
@@ -161,7 +159,7 @@ class CityFour extends Component {
                                     <p> SW {Math.round(weatherResults.list[22].wind.speed)} mph</p>
                                 </div>
                             </div>
-                            <div className= "days_container">
+                            <div className= "weather_city_summary" id= "weekday_container">
                                     <h4 id= "weekday_header">
                                     {dateFormat(weatherResults.list[30].dt_txt,"dddd")}
                                     </h4>                                    
@@ -182,9 +180,6 @@ class CityFour extends Component {
             );
         }
     }
-
-
-
 
 
 export default CityFour
