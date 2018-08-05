@@ -17,11 +17,11 @@ const Router = () => (
     <Routing>
         <Switch>
         <Route path= "/" component= {App} exact/>
-        <Route path= "/cityone" component ={CityOne}/>
-        <Route path = "/citytwo" component = {CityTwo}/>
-        <Route path = "/citythree" component = { CityThree} />
-        <Route path = "/cityfour" component = {CityFour}/>
-        <Route path = "/cityfive" component = {CityFive}
+        <Route path= "http://my-weather-personalized.surge.sh/cityone" component ={CityOne}/>
+        <Route path = "http://my-weather-personalized.surge.sh/citytwo" component = {CityTwo}/>
+        <Route path = "http://my-weather-personalized.surge.sh/citythree" component = { CityThree} />
+        <Route path = "http://my-weather-personalized.surge.sh/cityfour" component = {CityFour}/>
+        <Route path = "http://my-weather-personalized.surge.sh/cityfive" component = {CityFive}
         />
         </Switch>
     </Routing>
