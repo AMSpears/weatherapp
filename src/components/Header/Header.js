@@ -8,11 +8,11 @@ const Header= () => {
         <div className= "tabs">
             <a id= "logo" href= "/"> My Weather</a>
             <a href= "/">Home</a>
-            <a href= "http://my-weather-personalized.surge.sh/cityone">New York</a>
-            <a href= "http://my-weather-personalized.surge.sh/citytwo">Washington </a>
-            <a href= "http://my-weather-personalized.surge.sh/citythree">Los Angeles</a>
-            <a href= "http:/my-weather-personalized.surge.sh/cityfour">Boston</a>
-            <a href= "http://my-weather-personalized.surge.sh/cityfive">Miami</a>
+            <a href= "/cityone">New York</a>
+            <a href= "/citytwo">Washington </a>
+            <a href= "/citythree">Los Angeles</a>
+            <a href= "/cityfour">Boston</a>
+            <a href= "/cityfive">Miami</a>
         </div>
     </div>
     )
