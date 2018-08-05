@@ -70,3 +70,53 @@ p {
     color: #4075ce;
     
 }
+@media only screen and (max-width: 768px) {
+    .weather_container {
+        width: 100%;
+    }
+    .weather_summary {
+        width: 350px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .weather_container {
+        width: 100%;
+    }
+
+    .weather_summary {
+        width: 400px;
+        margin-left: 40px;
+        margin-right: 40px;
+
+    }
+}
+
+@media only screen and (max-width: 375px) {
+   .weather_container {
+       width: 100%;
+   }
+
+   .weather_summary {
+       width: 350px;
+        margin-left: 30px;
+        margin-right:30px;
+
+   }
+}
+@media only screen and (max-width: 320px) {
+     .weather_container {
+        width: 100%;
+
+     }
+
+     .weather_summary {
+        width: 300px;
+        margin-left: 20px;
+        margin-right:20px;
+
+     }
+
+}
