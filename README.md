@@ -8,13 +8,13 @@ The purpose of this application is to allow the user to check the weather for th
 
 * Weather App-- http://my-weather-personalized.surge.sh/
 
-## Technologies Uses
+## Technologies Used
 
-React.js
+* React.js
 
-CSS3
+* CSS3
 
-HTML5
+* HTML5
 
 ## Dependencies 
 
@@ -26,9 +26,9 @@ HTML5
 
 ## Approach Taken
 
-* Researched API Documentation
-* Sketched the layout of the app 
-* Researched design inspiration and background pictures on dribbble
+* Researched API Documentation.
+* Sketched the layout of the app.
+* Researched design inspiration and background pictures on dribbble.
 
 ## Weather API
 
@@ -42,11 +42,11 @@ HTML5
 
 ## Future Features
 
-* Allow users to get an overview of the weather for the specified cities
+* Allow users to get an overview of the weather for the specified cities.
 
 ## Future Features
 
-*  Add search bar for users to find the weather for any city
+*  Add search bar for users to find the weather for any city.
 
 ## Acknowledgements
 
