@@ -8,12 +8,20 @@
 h1 {
     font-size: 60px;
     font-family: 'Roboto Slab', serif;
+    padding-left: 100px;
+    text-shadow: 2px 2px white;
+
 
 }
 h3 {
-    font-size: 35px;
-    font-weight: 400;
+    font-family: "Roboto Slab", serif;
+    font-weight: 700;
+    font-size: 40px;
+    padding-left: 120px;
+    text-shadow : 2px 2px white;
+
 }
+
 #weekday_header {
     font-weight: 400;
     font-size: 25px;
@@ -38,6 +46,7 @@ td {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .cities_weather_summary {
@@ -60,6 +69,8 @@ td {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+
 }
 
 .days_container {
@@ -75,4 +86,9 @@ td {
     border-radius: 10px;
     background-color:rgb(255, 255, 255, 0.965);
     box-shadow: 0 3px 6px 2px rgba(111, 111, 111, 0.5);
+}
+.cities_weather_details {
+    padding-top: 40px;
+    font-size: 24px;
+    color: black;
 }

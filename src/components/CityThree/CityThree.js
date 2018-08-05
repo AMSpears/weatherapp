@@ -39,11 +39,11 @@ class CityThree extends Component {
                 <h1>{ weatherResults.city.name } /  {Math.round(weatherResults.list[0].main.temp)}&#176;</h1> 
                     <div className= "cities_weather_container">
                         <div className= "cities_weather_summary">
-                             <h3>Today / {dateFormat(now, "h:ss TT")}</h3>
+                             <h3 id = "date_title">Today / {dateFormat(now, "h:ss TT")}</h3>
                                 <p id= "description">{weatherResults.list[0].weather[0].description}</p>
                                 <img src = {`http://openweathermap.org/img/w/${weatherResults.list[0].weather[0].icon}.png`}/>
                                 <p id= "temp"> {Math.round(weatherResults.list[0].main.temp)}&#176;</p>
-                                <div className = "weather_details">
+                                <div className = "cities_weather_details">
                                 <p>Min: {Math.round(weatherResults.list[0].main.temp_min)}&#176;</p>
                                 <p >Max: {Math.round(weatherResults.list[0].main.temp_max)}&#176;</p>
                                 <p>Humidity: {weatherResults.list[0].main.humidity}%</p>
