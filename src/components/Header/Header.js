@@ -4,8 +4,9 @@ import "./Header.css"
 
 const Header= () => {
     return(
-        <div className= "tabs_container">
-            <a id= "logo" href= "/"> Personalize Weather</a>
+    <div className= "tabs_container">
+        <div className= "tabs">
+            <a id= "logo" href= "/"> My Weather</a>
             <a href= "/">Home</a>
             <a href= "/cityone">New York</a>
             <a href= "/citytwo">Washington </a>
@@ -13,6 +14,7 @@ const Header= () => {
             <a href= "/cityfour">Boston</a>
             <a href= "/cityfive">Miami</a>
         </div>
+    </div>
     )
 }
 
