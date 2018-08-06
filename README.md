@@ -22,7 +22,7 @@ The purpose of this application is to allow the user to check the weather for th
 * React Dom
 * React Router Dom
 * React Scripts
-* DateFormat
+* Moment
 
 ## Approach Taken
 

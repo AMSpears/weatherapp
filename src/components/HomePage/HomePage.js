@@ -3,8 +3,6 @@ import React, {Component} from "react"
 import "./HomePage.css"
 
 const API_KEY = "d0c74e4757653dd7d26fe20813b354d8"
-const dateFormat = require('dateformat');
-const now = new Date();
 
 class HomePage extends Component {
   state = {
