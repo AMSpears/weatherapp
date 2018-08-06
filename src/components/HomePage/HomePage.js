@@ -33,8 +33,7 @@ class HomePage extends Component {
       return null;
     }
     return (
-      <div>
-        <div className= "weather_container" >
+      <div className= "weather_container" >
         {weatherResults.map(weatherResult => (
           <div className= "weather_summary" key={weatherResult.city.id}>
               <div className= "weather_initial_content">
@@ -53,7 +52,6 @@ class HomePage extends Component {
             </div>
             ))}
         </div>
-     </div>
     );
   }
 }
