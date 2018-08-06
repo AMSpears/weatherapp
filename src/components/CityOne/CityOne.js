@@ -18,9 +18,7 @@ class CityOne extends Component {
                 this.setState({
                     weatherResults: results
                 });
-                console.log(results)
             })
-            .catch(error => console.error(error));
     }
 
     render() {

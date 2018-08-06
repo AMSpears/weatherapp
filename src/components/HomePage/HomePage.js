@@ -23,7 +23,6 @@ class HomePage extends Component {
       .then(weatherResults => {
         this.setState({ weatherResults });
       })
-      .catch(error => console.error(error));
   }
 
   render() {
