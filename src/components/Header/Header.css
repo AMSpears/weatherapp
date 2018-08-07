@@ -1,24 +1,24 @@
-
-.tabs_container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
+div.scrollNavs{
+    overflow: auto;
+    white-space: nowrap;
 }
-
-a {
-    color: black;
-    text-decoration: none;
-    font-size: 20px;
-    font-family:'Roboto Slab', serif;
+div.scrollNavs a {
+    display: inline-block;
+    text-align: center;
     padding: 20px;
+     color: black;
+     text-decoration: none;
+     font-size: 20px;
+     font-family: 'Roboto Slab',
+     serif;
 }
-a:hover {
+
+div.scrollNavs a:hover {
     border-bottom:2px solid #5786d6;
 }
+
 #logo {
     font-size: 30px;
     margin-right: 50px;
     color: #5786d6;
- }
-
+}
